@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <div class="expression" id="expression"></div>
+      <div class="current" id="current">0</div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-clear" onclick="clearAll()">AC</button>
+      <button class="btn-operator" onclick="setOperator('/')">&divide;</button>
+      <button class="btn-operator" onclick="setOperator('*')">&times;</button>
+
+      <button class="btn-number" onclick="appendDigit('7')">7</button>
+      <button class="btn-number" onclick="appendDigit('8')">8</button>
+      <button class="btn-number" onclick="appendDigit('9')">9</button>
+      <button class="btn-operator" onclick="setOperator('-')">&minus;</button>
+
+      <button class="btn-number" onclick="appendDigit('4')">4</button>
+      <button class="btn-number" onclick="appendDigit('5')">5</button>
+      <button class="btn-number" onclick="appendDigit('6')">6</button>
+      <button class="btn-operator" onclick="setOperator('+')">+</button>
+
+      <button class="btn-number" onclick="appendDigit('1')">1</button>
+      <button class="btn-number" onclick="appendDigit('2')">2</button>
+      <button class="btn-number" onclick="appendDigit('3')">3</button>
+      <button class="btn-number" onclick="appendDigit('0')">0</button>
+      <button class="btn-number" onclick="appendDigit('.')">.</button>
+
+      <button class="btn-equals" onclick="calculate()">=</button>
+
+      <button class="btn-history" onclick="toggleHistory()">History</button>
+    </div>
+
+    <div class="history-panel" id="historyPanel">
+      <h3>Calculation History</h3>
+      <div id="historyList"><span class="empty">No history yet.</span></div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>

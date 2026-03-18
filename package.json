@@ -1,0 +1,19 @@
+{
+  "name": "summative_lab_part_1_javascript_calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testMatch": ["**/tests/**/*.test.js"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}

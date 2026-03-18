@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #1a1a2e;
+  background: #d0d8e8;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -59,11 +59,11 @@ button {
 button:active { transform: scale(0.94); }
 
 .btn-number {
-  background: #1a1a3e;
-  color: #e0e0e0;
+  background: #4a90a4;
+  color: #fff;
 }
 
-.btn-number:hover { background: #252555; }
+.btn-number:hover { background: #5aa8be; }
 
 .btn-operator {
   background: #e94560;
